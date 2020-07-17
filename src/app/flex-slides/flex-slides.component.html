@@ -1,0 +1,13 @@
+<div>
+    <section id="home" class="module-hero module-parallax module-fade module-full-height">
+        <div class="hero-slider">
+            <ul class="slides" *ngIf="ImageList && ImageList.length">
+                <!-- SLIDE -->
+                <li class="bg-dark" *ngFor="let image of ImageList">
+                    <div class="slidebg slide-zoom bg-dark-30" style="background-image:url({{image.imageUrl}})"></div>
+                </li>
+                <!-- /SLIDE -->
+            </ul>
+        </div>
+    </section >
+</div>
